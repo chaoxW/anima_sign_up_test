@@ -10,7 +10,7 @@ describe("Sign up account", () => {
   let lastName = faker.person.lastName();
   let postCodeGP = "WC1N 1PD";
   let practice = "THE BLOOMSBURY SURGERY";
-  it("Validate custom clinic apps", () => {
+  it("Sign up account", () => {
     cy.visit(Cypress.env("baseUrl"));
     login.clickStandardLogin();
     login.insertLoginEmail(Cypress.env("email"));
